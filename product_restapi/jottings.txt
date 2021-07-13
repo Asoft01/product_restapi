@@ -1,0 +1,10 @@
+php artisan make:migration create_sclasses_table --create=sclasses
+
+php artisan make:controller Api/SclassController --resource
+
+
+php artisan make:controller Api/SubjectController --resource
+php artisan make:migration create_subjects_table --create=subjects
+php artisan make:migration create_sections_table --create=sections
+
+php artisan make:controller Api/SectionController --resource
