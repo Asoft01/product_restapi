@@ -8,3 +8,14 @@ php artisan make:migration create_subjects_table --create=subjects
 php artisan make:migration create_sections_table --create=sections
 
 php artisan make:controller Api/SectionController --resource
+
+php artisan make:migration create_students_table --create=students
+php artisan make:model Model/Student
+php artisan make:controller Api/StudentController --resource
+
+https://jwt-auth.readthedocs.io/en/develop/
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+
+ php artisan jwt:secret
+
+ https://bcrypt-generator.com/
